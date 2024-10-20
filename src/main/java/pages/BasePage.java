@@ -9,5 +9,12 @@ public class BasePage {
     public static void setDriver(WebDriver driver) {
         BasePage.driver = driver;
     }
+    public static void pause(int time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 }
