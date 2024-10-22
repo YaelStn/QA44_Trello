@@ -5,11 +5,13 @@ import manager.ApplicationManager;
 import org.testng.annotations.Test;
 import pages.HomePage;
 
+import static manager.PropertiesReader.getProperty;
+
 public class LoginTests  extends ApplicationManager {
 
     UserDTO user = UserDTO.builder()
-            .email("yael.stolshtein@gmail.com")
-            .password("y6!?3)E-uW-SrCL")
+            .email(getProperty("login.properties","email"))
+            .password(getProperty("login.properties","password"))
             .build();
 
     @Test

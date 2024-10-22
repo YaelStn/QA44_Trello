@@ -14,11 +14,13 @@ import pages.PersonalBoardPage;
 import java.lang.reflect.Method;
 import java.util.Random;
 
+import static manager.PropertiesReader.getProperty;
+
 public class BoardsTests extends ApplicationManager {
 
     UserDTO user = UserDTO.builder()
-            .email("yael.stolshtein@gmail.com")
-            .password("y6!?3)E-uW-SrCL")
+            .email(getProperty("login.properties","email"))
+            .password(getProperty("login.properties","password"))
             .build();
 
     BoardsPage boardsPage = new BoardsPage(getDriver());
