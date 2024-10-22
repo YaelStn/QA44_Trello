@@ -2,6 +2,9 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactoryFriend;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -11,6 +14,8 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
         private WebDriver driver;
     private ChromeOptions chromeOptions;
+
+    public Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
         public WebDriver getDriver() {
             return driver;

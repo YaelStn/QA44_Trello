@@ -1,5 +1,6 @@
 package tests;
 
+import dataproviders.DataProviderBoards;
 import dto.BoardDTO;
 import dto.UserDTO;
 import manager.ApplicationManager;
@@ -10,6 +11,7 @@ import pages.BoardsPage;
 import pages.HomePage;
 import pages.PersonalBoardPage;
 
+import java.lang.reflect.Method;
 import java.util.Random;
 
 public class BoardsTests extends ApplicationManager {
@@ -29,7 +31,7 @@ public class BoardsTests extends ApplicationManager {
                 .typePassword(user);
     }
     @Test
-    public void createBoardPositive() {
+    public void createBoardPositive(Method method) {
         //int i = (int) ((System.currentTimeMillis()/1000)%3600);
         int i = new Random().nextInt(1000) + 1000;
 
@@ -38,6 +40,8 @@ public class BoardsTests extends ApplicationManager {
                 .boardTitle("QA44-" + i)
                 .build();
 
+
+        logger.info(method.getName() + " "+ "test with board title -->" +board.getBoardTitle());
 
      //   HomePage homePage = new HomePage(getDriver());
         Assert.assertTrue(
@@ -67,15 +71,15 @@ public class BoardsTests extends ApplicationManager {
                 .clickBtnCreateSubmitNegative()
                 .isElementClickable_btnCreateSubmit(),"element unclickable");
     }
-    @Test
-    public void deleteBoardPositiveTest(){
+    @Test(dataProvider = "DPFile_deleteBoardPositiveTest",dataProviderClass = DataProviderBoards.class)
+    public void deleteBoardPositiveTest(BoardDTO board){
 //генерируешь случайное число (например, 1457),
 // а затем используешь его для создания уникального названия доски
-        int i = new Random().nextInt(1000) + 1000;
-
-        BoardDTO board = BoardDTO.builder()
-               .boardTitle("QA44-" + i)
-                .build();
+//        int i = new Random().nextInt(1000) + 1000;
+//
+//        BoardDTO board = BoardDTO.builder()
+//               .boardTitle("QA44-" + i)
+//                .build();
 
         PersonalBoardPage personalBoardPage = boardsPage
                 .typeBoardTitle(board)
