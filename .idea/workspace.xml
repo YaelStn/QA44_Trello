@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f03d8e4-c5bc-4311-92d9-903ae4469fb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/PropertiesReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/properties/login.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/TestNGListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/WDListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/login.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/login.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +68,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources/files_cvs" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BoardsTests.deleteBoardPositiveTest">
+  <component name="RunManager" selected="Gradle.BoardsTests.createBoardNegative">
     <configuration name="BoardsTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -197,10 +196,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BoardsTests.createBoardNegative" />
         <item itemvalue="Gradle.BoardsTests.deleteBoardPositiveTest" />
         <item itemvalue="Gradle.BoardsTests" />
         <item itemvalue="Gradle.BoardsTests.createBoardPositive" />
-        <item itemvalue="Gradle.BoardsTests.createBoardNegative" />
         <item itemvalue="Gradle.LoginTests" />
       </list>
     </recent_temporary>
