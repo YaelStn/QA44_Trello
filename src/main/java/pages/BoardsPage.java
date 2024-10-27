@@ -26,6 +26,13 @@ public class BoardsPage extends BasePage{
     @FindBy(xpath = "//span[@class='QMKgZFIlTLiEJN']")
     WebElement popUpBoardDeleted;
 
+
+    @FindBy(xpath = "//button[@data-testid='header-member-menu-button']")
+    WebElement btnHeaderProfile;
+
+    @FindBy(xpath = "//a[@data-testid='manage-account-link']")
+    WebElement btnManageAccount;
+
     public BoardsPage typeBoardTitle(BoardDTO board){
         btnCreateBoard.click();
         inputBoardTitle.sendKeys(board.getBoardTitle());
@@ -50,5 +57,11 @@ public class BoardsPage extends BasePage{
     public boolean isTextPopUpPresent(){
         return isTextInElementPresent(popUpBoardDeleted,"Board deleted.",5);
 
+    }
+    public ProfileAndVisibilityPage goToProfileAndVisibility() {
+
+        btnHeaderProfile.click();//click na btn header profile
+        btnManageAccount.click();//click na btn manage acc
+        return new ProfileAndVisibilityPage(driver);// vozvr new page
     }
 }

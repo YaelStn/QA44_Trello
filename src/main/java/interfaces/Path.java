@@ -5,4 +5,6 @@ public interface Path {
 
     String PROPERTIES_PATH = "src/main/java/properties";
 
+    String PHOTOS_PATH = "src/main/java/photos/"; //put k foto avatar
+
 }

@@ -18,6 +18,7 @@ out/
 ### *.log or
 src/main/resources/test_logs
 src/main/java/properties
+src/main/java/photos
 
 ### Eclipse ###
 .apt_generated
