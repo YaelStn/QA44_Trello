@@ -75,8 +75,8 @@ public class BoardsTests extends ApplicationManager {
     }
     @Test(dataProvider = "DPFile_deleteBoardPositiveTest",dataProviderClass = DataProviderBoards.class)
     public void deleteBoardPositiveTest(BoardDTO board){
-//генерируешь случайное число (например, 1457),
-// а затем используешь его для создания уникального названия доски
+//generiruem sluchainoe chislo,
+
 //        int i = new Random().nextInt(1000) + 1000;
 //
 //        BoardDTO board = BoardDTO.builder()

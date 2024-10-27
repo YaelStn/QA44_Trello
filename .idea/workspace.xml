@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f03d8e4-c5bc-4311-92d9-903ae4469fb9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProfileAndVisibilityPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/photos/cat3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ProfileTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/RetryAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BoardsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProfileAndVisibilityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProfileAndVisibilityPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/login.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/login.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BoardsTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,6 +69,7 @@
     "Gradle.Build QA44_Trello.executor": "Run",
     "Gradle.LoginTests.executor": "Run",
     "Gradle.LoginTests.loginTest.executor": "Run",
+    "Gradle.ProfileTests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
@@ -78,7 +90,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BoardsTests.createBoardNegative">
+  <component name="RunManager" selected="Gradle.ProfileTests">
     <configuration name="BoardsTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -117,30 +129,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.BoardsTests.createBoardNegative&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="BoardsTests.createBoardPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.BoardsTests.createBoardPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,13 +187,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ProfileTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.ProfileTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ProfileTests" />
+        <item itemvalue="Gradle.LoginTests" />
+        <item itemvalue="Gradle.BoardsTests" />
         <item itemvalue="Gradle.BoardsTests.createBoardNegative" />
         <item itemvalue="Gradle.BoardsTests.deleteBoardPositiveTest" />
-        <item itemvalue="Gradle.BoardsTests" />
-        <item itemvalue="Gradle.BoardsTests.createBoardPositive" />
-        <item itemvalue="Gradle.LoginTests" />
       </list>
     </recent_temporary>
   </component>

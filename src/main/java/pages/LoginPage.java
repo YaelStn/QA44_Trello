@@ -39,13 +39,14 @@ public class LoginPage extends BasePage {
 
     public BoardsPage typePassword(UserDTO user){
         //pause(5000);
-        // Ожидаем, пока поле для ввода пароля станет видимым, а затем вводим пароль.
+        // jdem poka pole stanet vidimim a potom vvodim parol
+
         new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.visibilityOf(inputPassword)).sendKeys(user.getPassword());
         //inputPassword.sendKeys(user.getPassword());
-        // После ввода пароля нажимаем на кнопку "Login".
+        // posle vvoda najimaem "Login".
         btnLoginSubmit.click();
-        // После успешного ввода пароля и нажатия на кнопку, переходим на страницу BoardsPage.
+        // posle vvoda i uspeshnogo vhoda perehodim BoardsPage.
         return new BoardsPage(driver);
     }
 //    public void typePassword(UserDTO user){

@@ -26,8 +26,8 @@ public class ProfileAndVisibilityPage extends BasePage implements Path {
 
      @FindBy(xpath = "//button[@data-testid='upload-button']")
       WebElement uploadPhoto;
-  //  @FindBy(xpath = "//button[@type='submit']")
-   // WebElement btnUpload;
+   @FindBy(xpath = "//button[@type='submit']")
+    WebElement btnUpload;
     @FindBy(id = "image-input")  //tk zagruj ne v knopku
     WebElement inputUploadPhoto;
     @FindBy(xpath = "//div[@class='css-1748k3u']")
@@ -46,7 +46,7 @@ public class ProfileAndVisibilityPage extends BasePage implements Path {
         // pause(3000);
        // uploadPhoto.sendKeys("Absolute Path");
         File file = new File(PHOTOS_PATH + fileName);//sozdaem object file
-        //String filePath = file.getAbsolutePath();//absolutniy put
+        String filePath = file.getAbsolutePath();//absolutniy put
         inputUploadPhoto.sendKeys(filePath);//zagrujaem foto ne v knopku a v input
         // pause(3000);
         //btnUpload.click();//clickaem na sinyuy knopku upload
